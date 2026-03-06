@@ -1,5 +1,16 @@
-runtime: node
-startCommand: node app.js
-buildCommand: npm install
-port: 8080
-memory: 512mb
+service:
+  name: editly-engine
+  runtime: nodejs
+  build_command: npm install
+  start_command: node app.js
+  port: 8080
+  # Crucial for Editly's node-canvas and ffmpeg requirements
+  pkg_deps:
+    - pkg-config
+    - libcairo2-dev
+    - libpango1.0-dev
+    - libjpeg-dev
+    - libgif-dev
+    - librsvg2-dev
+    - build-essential
+    - ffmpeg
