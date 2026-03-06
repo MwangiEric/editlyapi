@@ -1,15 +1,15 @@
 {
-    "name": "express-example",
-    "version": "1.0.0",
-    "description": "",
-    "main": "app.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "node app.js"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-      "express": "^4.18.2"
-    }
+  "name": "editly-leapcell",
+  "version": "1.0.0",
+  "description": "Editly Text-to-Video Engine",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "editly": "^0.14.0",
+    "canvas": "^2.11.2"
   }
+}
